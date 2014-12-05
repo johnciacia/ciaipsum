@@ -77,6 +77,11 @@
 		var count = $('input[type=text]').val() || 4,
 				ciaipsum = $('#ciaipsum');
 
+		if(count > 100) {
+			alert('Cia would never say that much');
+			return;
+		}
+
 		ciaipsum.empty();
 
 		for(i = 0; i < count; i++) {
